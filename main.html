@@ -1,16 +1,75 @@
-<!DOCTYPE html>
-
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles.css">
+  <title>Architecture — Sample Webpage</title>
+  <style>
+    /* Page wrapper: fixed width 1100px and centered */
+    
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="page">
+    <h1>HTML Webpage Creation — Architecture</h1>
+    <p class="lead">This sample page demonstrates a fixed-width layout (1100px), a required image container, and a three-column table (200 | 600 | 200).</p>
 
+    <section class="imageContainer">
+      <img src="https://images.unsplash.com/photo-1496307653780-42ee777d4833?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="architectural sketch and rendered home">
+    </section>
+
+    <table class="contentTable" aria-label="architecture content table">
+      <colgroup>
+        <col class="first">
+        <col class="middle">
+        <col class="last">
+      </colgroup>
+
+      <tr>
+        <td class="imageCell">
+          <img src="/mnt/data/e88d6a57-2ec0-460c-9d42-ef9a61480e28.png" alt="detail image 1">
+          <div class="caption">HousePlans.com — design resources</div>
+        </td>
+
+        <td class="centerText">
+          <h3 style="margin-top:0; text-align:center;">Objective</h3>
+          <p>Discuss factors that are important in the design of bedrooms. Plan the size and location of closets for a typical residence. Plan a furniture arrangement for a room. Implement important design considerations for bathrooms. Plan a bathroom that follows solid design principles. Design a functional kitchen to meet a family's needs. The center column is text content as required.</p>
+
+          <p>Unit topics:</p>
+          <ul>
+            <li>Floor Plans &amp; Layout</li>
+            <li>Kitchen, Bathroom, and Service Areas</li>
+            <li>Furniture &amp; Circulation</li>
+            <li>Sustainable Design Principles</li>
+          </ul>
+        </td>
+
+        <td class="imageCell">
+          <img src="/mnt/data/e88d6a57-2ec0-460c-9d42-ef9a61480e28.png" alt="detail image 2">
+          <div class="caption">GreenFloor — sustainable design ideas</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="imageCell">
+          <img src="/mnt/data/e88d6a57-2ec0-460c-9d42-ef9a61480e28.png" alt="detail image 3">
+          <div class="caption">Architectural details and textures</div>
+        </td>
+
+        <td class="centerText">
+          <h3 style="margin-top:0; text-align:center;">Discussion</h3>
+          <p>Apply design principles to planning a living room. Integrate furniture in a living room plan. Analyze a dining room using good design principles. Design a functional entry and foyer.</p>
+          <p class="caption">The middle column width is 600px and is intended for descriptive text and learning objectives.</p>
+        </td>
+
+        <td class="imageCell">
+          <img src="/mnt/data/79827617-235a-4981-93a0-89c746a75043.png" alt="exterior render">
+          <div class="caption">Rendered exterior with sketch overlay</div>
+        </td>
+      </tr>
+    </table>
+
+  </div>
 </body>
-
 </html>
